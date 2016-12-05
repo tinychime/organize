@@ -5,13 +5,13 @@ layout: default
 
 <div class="mh3-ns mt6-ns mt5 lh-copy">
   {% for edition in site.data.editions %}
-  <div class="w-50-ns w-100 fl pa3 mb3">
+  <div class="w-50-ns w-100 fl pa3 mb4">
     <img src="{{ site.baseurl }}/images/{{ edition.image }}">
     <h1 class="mv2 f2 fw4">{{ edition.title }} <span class="f5">by {{ edition.designer }}</span></h1>
     <p class="mt0">{{ edition.desc }}</p>
-    <p class="mv0">Benefiting: <a class="link dim black bb" href="">{{ edition.org }}</a></p>
-    <p class="mt0">Size: {{ edition.dimensions }}</p>
-    <a class="gumroad-button tracked-med" href="https://gum.co/demo?wanted=true" target="_blank"><span class="black">Add <strong class="">{{ edition.title }}</strong> to your bag</span></a>
+    <p class="mv0"><span class="fw9">Benefiting:</span> <a class="link dim black bb" href="">{{ edition.org }}</a></p>
+    <p class="mt0"><span class="fw9">Size:</span> {{ edition.dimensions }}</p>
+    <a class="gumroad-button tracked-med dim" href="https://gum.co/demo?wanted=true" target="_blank"><span class="black">Add <strong class="">{{ edition.title }}</strong> to your bag</span></a>
   </div>
   {% endfor %}
 </div>

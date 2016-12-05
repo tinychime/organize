@@ -1,19 +1,39 @@
-- title: "Number One"
+- title: "Number Four"
   org: "ACLU"
   org-url: "https://www.aclu.org/"
   designer: "Joshua Osborne"
   designer-url: "http://josh.graphics"
-  dimensions: "15x15"
-  image: organize-poster.svg
+  dimensions: "15 x 15"
+  image: organize-poster-red.svg
   desc: "The very first ORGANIZE print. Conceived Washington, DC, screen printed in Minneapolis, MN. Edition of 50, signed by the artist."
   price: "$15"
 
-- title: "Number Two"
+- title: "Number Three"
   org: "Black Lives Matter"
   org-url: "http://blacklivesmatter.com/"
   designer: "Joe Letchford"
   designer-url: "http://joeletchford.com"
-  dimensions: "15x15"
+  dimensions: "15 x 15"
+  image: organize-poster.svg
+  desc: "A print benefitting the Black Lives Matter organization in support of their efforts to broaden the conversation around state violence to include all of the ways in which Black people are intentionally left powerless at the hands of the state."
+  price: "$15"
+
+- title: "Number Two"
+  org: "ACLU"
+  org-url: "https://www.aclu.org/"
+  designer: "Joshua Osborne"
+  designer-url: "http://josh.graphics"
+  dimensions: "15 x 15"
+  image: organize-poster.svg
+  desc: "The very first ORGANIZE print. Conceived Washington, DC, screen printed in Minneapolis, MN. Edition of 50, signed by the artist."
+  price: "$15"
+
+- title: "Number One"
+  org: "Black Lives Matter"
+  org-url: "http://blacklivesmatter.com/"
+  designer: "Joe Letchford"
+  designer-url: "http://joeletchford.com"
+  dimensions: "15 x 15"
   image: organize-poster-red.svg
   desc: "A print benefitting the Black Lives Matter organization in support of their efforts to broaden the conversation around state violence to include all of the ways in which Black people are intentionally left powerless at the hands of the state."
   price: "$15"
