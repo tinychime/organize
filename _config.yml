@@ -1,6 +1,6 @@
 # Site settings
 title: Organize
-description: "Stop writing CSS and start building prototypes."
+description: "Organize around something that matters."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
