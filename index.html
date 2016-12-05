@@ -1,18 +1,25 @@
 ---
 layout: default
 ---
-<p class="w7 center tc mt5-ns mt3 lh-copy">Art created in support of the artist's charity of choice. Organize around something that matters.</p>
+<p class="w7 center tc mt5-ns mt3 lh-copy">{{ site.description }}</p>
 
 <div class="mh3-ns mt6-ns mt5 lh-copy">
+  <!-- Loop over /_data/editions.yml -->
   {% for edition in site.data.editions %}
-  <div class="w-50-ns w-100 fl pa3 mb4">
-    <img src="{{ site.baseurl }}/images/{{ edition.image }}">
-    <h1 class="mv2 f2 fw4">{{ edition.title }} <span class="f5">by {{ edition.designer }}</span></h1>
-    <p class="mt0">{{ edition.desc }}</p>
-    <p class="mv0"><span class="fw9">Benefiting:</span> <a class="link dim black bb" href="">{{ edition.org }}</a></p>
-    <p class="mt0"><span class="fw9">Size:</span> {{ edition.dimensions }}</p>
-    <a class="gumroad-button tracked-med dim" href="https://gum.co/demo?wanted=true" target="_blank"><span class="black">Add <strong class="">{{ edition.title }}</strong> to your bag</span></a>
-  </div>
+    <div class="w-50-ns w-100 fl pa3 mb4">
+      <!-- Print Image – This may end up being a bunch of small carousels -->
+      <img src="{{ site.baseurl }}/images/{{ edition.image }}">
+      <!-- Metadata -->
+      <h1 class="mv2 f2 fw4">{{ edition.title }} <span class="f5">by {{ edition.designer }}</span></h1>
+      <p class="mt0">{{ edition.desc }}</p>
+      <p class="mv0"><span class="fw9">Benefiting:</span> <a class="link dim black bb" href="">{{ edition.org }}</a></p>
+      <p class="mt0"><span class="fw9">Size:</span> {{ edition.dimensions }}</p>
+      <!-- Gumroad Purchase Button -->
+      <a class="gumroad-button tracked-med dim" href="https://gum.co/demo?wanted=true" target="_blank"><span class="black">
+        Add <strong class="">{{ edition.title }}</strong> to your bag</span>
+      </a>
+    </div>
   {% endfor %}
 </div>
+
 <div class="cf"></div>
