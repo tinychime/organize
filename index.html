@@ -1,23 +1,22 @@
 ---
 layout: default
 ---
-<p class="w-50-ns ph4 center tc mt5-ns mt3 lh-copy f4-ns">{{ site.description }}</p>
+<p class="w-33-ns ph4 center tc mv6-ns mt3 lh-copy f5-ns">{{ site.description }}</p>
 
-<div class="mh3-ns mv5-ns lh-copy">
+<div class="mh3-ns mv5-ns lh-copy f5 tracked-med">
   <!-- Loop over /_data/editions.yml -->
   {% for edition in site.data.editions %}
-    <div class="w-50-ns w-100 fl pa3 mb4">
+    <div class="w-50-ns w-100 fl pa3 mb4 f5">
       <!-- Print Image – This may end up being a bunch of small carousels -->
       <img src="{{ site.baseurl }}/images/{{ edition.image }}">
       <!-- Metadata -->
-      <div class="pr4">
-        <h1 class="mv2 f2 fw8">{{ edition.title }} <span class="f5 fw4">by {{ edition.designer }}</span></h1>
+      <div class="pr4 mt3 w-90-ns">
+        <h1 class="mv3 fw8 f4">{{ edition.title }} <span class="fw4 f6">by <a class="link black bb dim" href="{{ edition.designer-url }}">{{ edition.designer }}</a></span></h1>
         <p class="mt0">{{ edition.desc }}</p>
-        <p class="mv0"><span class="fw9">Benefiting:</span> <a class="link dim black bb" href="">{{ edition.org }}</a></p>
-        <p class="mt0"><span class="fw9">Size:</span> {{ edition.dimensions }}</p>
+        <p class="mv3"><span class="fw9">Benefiting:</span> <a class="link dim black bb" href="">{{ edition.org }}</a></p>
         <!-- Gumroad Purchase Button -->
-        <a class="gumroad-button tracked-med dim" href="https://gum.co/demo?wanted=true" target="_blank"><span class="black">
-          Add <strong class="">{{ edition.title }}</strong> to your bag</span>
+        <a class="tracked-med dim link f4" href="https://gum.co/demo?wanted=true" target="_blank"><span class="black">
+          Purchase <span class="fw6">{{ edition.title }}</span> for <span class="fw6">{{ edition.price }}</span> &rarr;</span>
         </a>
       </div>
     </div>
