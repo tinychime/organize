@@ -10,28 +10,34 @@
   clear: both;
 }
 
-.cf-4th {
-  &:nth-child(4n) {
-    margin-right: 0;
-    clear: both;
-  }
-}
-
-.p-fix {
-  &:nth-child(3n) {
-    padding-right: 0;
-    margin-right: 0;
-  }
-}
-
 .w7 {
   max-width: 18rem;
-}
-
-.gumroad-button-logo {
-  display: none !important;
 }
 
 .tracked-med {
   letter-spacing: .01em;
 }
+
+.f-huge {
+  font-size: 14em;
+}
+
+.korolev {
+  font-family: "korolev";
+}
+
+#logo-letter-1 { transform: rotate(-10deg); display: inline-block; }
+#logo-letter-2 { transform: rotate(25deg) translate(25px, 100px); display: inline-block; }
+#logo-letter-3 { transform: rotate(-5deg) translate(-15px, 100px); display: inline-block; }
+#logo-letter-4 { transform: rotate(-20deg) translate(-30px, 0); display: inline-block; }
+#logo-letter-5 { transform: rotate(20deg) translate(25px, 80px); display: inline-block; }
+#logo-letter-6 { transform: rotate(-10deg) translate(-5px, 130px); display: inline-block; }
+#logo-letter-7 { transform: rotate(-15deg) translate(-10px, -25px); display: inline-block; }
+#logo-letter-8 { transform: rotate(20deg) translate(-10, 40px); display: inline-block; }
+
+// #logo-letter-1, #logo-letter-2, #logo-letter-3, #logo-letter-4, #logo-letter-5, #logo-letter-6, #logo-letter-7, #logo-letter-8 {
+//   transition: .2s all;
+//   &:hover {
+//     transform: none;
+//   }
+// }
