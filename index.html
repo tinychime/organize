@@ -1,16 +1,16 @@
 ---
 layout: default
 ---
-<p class="w-33-ns ph4 center tc mt3 pb5 pt6 lh-copy f5-ns">{{ site.description }}</p>
+<p class="w-25-ns center tc lh-copy f5-ns ph5 pv3 ph0-ns">{{ site.description }}</p>
 
 <div class="mh4-ns mv4-ns lh-copy f5 tracked-med">
   <!-- Loop over /_data/editions.yml -->
   {% for edition in site.data.editions %}
-    <div class="w-50-ns w-100 fl pa4 f5 {{ edition.margin-top }} mb2-ns">
+    <div class="w-50-ns w-100 fl-ns pa4 f5 {{ edition.margin-top }} mb2-ns">
       <!-- Print Image – This may end up being a bunch of small carousels -->
       <img src="{{ site.baseurl }}/images/{{ edition.image }}">
       <!-- Metadata -->
-      <div class="pr4 mt4 w-90-ns">
+      <div class="pr4 mt4-ns w-90-ns">
         <h1 class="mv3 fw8 f4">{{ edition.title }} <span class="fw4 f6">by <a class="link black bb dim" href="{{ edition.designer-url }}">{{ edition.designer }}</a></span></h1>
         <p class="mt0">{{ edition.desc }}</p>
         <p class="mv3"><span class="fw9">Benefiting:</span> <a class="link dim black bb" href="">{{ edition.org }}</a></p>

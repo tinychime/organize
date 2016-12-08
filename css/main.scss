@@ -2,42 +2,31 @@
 # Overwrite Tachyons here. Don't go overboard!
 ---
 
-.acumin {
-  font-family: "acumin-pro",sans-serif;
-}
+// Typekit
+.korolev { font-family: "korolev" }
+.acumin { font-family: "acumin-pro",sans-serif; }
 
-.cf {
-  clear: both;
-}
+// More type values
+.f-huge { font-size: 5.5em; }
+.tracked-med { letter-spacing: .01em; }
 
-.w7 {
-  max-width: 18rem;
-}
+// Make em values on .fluid-base child containers fluid
+.fluid-base { font-size: 2vw; }
 
-.tracked-med {
-  letter-spacing: .01em;
-}
+// Clearfix like <div class="cf"></div>
+.cf { clear: both; }
 
-.f-huge {
-  font-size: 14em;
-}
+// More widths
+.w7 { max-width: 18rem; }
 
-.korolev {
-  font-family: "korolev";
-}
+// ORGANIZE logo twisty-turny
+.char1 { transform: rotate(-10deg); display: inline-block; }
+.char2 { transform: rotate(25deg) translate(15%, 35%); display: inline-block; }
+.char3 { transform: rotate(-5deg) translate(-15%, 35%); display: inline-block; }
+.char4 { transform: rotate(-20deg) translate(-27%, 0); display: inline-block; }
+.char5 { transform: rotate(20deg) translate(10%, 40%); display: inline-block; }
+.char6 { transform: rotate(-10deg) translate(-30%, 40%); display: inline-block; }
+.char7 { transform: rotate(-15deg) translate(-20%, -15%); display: inline-block; }
+.char8 { transform: rotate(20deg) translate(0%, 10%); display: inline-block; }
 
-#logo-letter-1 { transform: rotate(-10deg); display: inline-block; }
-#logo-letter-2 { transform: rotate(25deg) translate(25px, 100px); display: inline-block; }
-#logo-letter-3 { transform: rotate(-5deg) translate(-15px, 100px); display: inline-block; }
-#logo-letter-4 { transform: rotate(-20deg) translate(-30px, 0); display: inline-block; }
-#logo-letter-5 { transform: rotate(20deg) translate(25px, 80px); display: inline-block; }
-#logo-letter-6 { transform: rotate(-10deg) translate(-5px, 130px); display: inline-block; }
-#logo-letter-7 { transform: rotate(-15deg) translate(-10px, -25px); display: inline-block; }
-#logo-letter-8 { transform: rotate(20deg) translate(-10, 40px); display: inline-block; }
-
-// #logo-letter-1, #logo-letter-2, #logo-letter-3, #logo-letter-4, #logo-letter-5, #logo-letter-6, #logo-letter-7, #logo-letter-8 {
-//   transition: .2s all;
-//   &:hover {
-//     transform: none;
-//   }
-// }
+.drag { cursor: move; }
